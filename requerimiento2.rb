@@ -51,13 +51,9 @@ end
 
 # Requerimiento 2
 class Ave < Animal
-    def nombre
-        puts "#{@nombre}"
-    end
     include Habilidades::Volador
     include Habilidades::Caminante
     include Alimentacion::Herbivoro
-
 end
 
 class Mamifero < Animal
@@ -105,12 +101,8 @@ class Mariposa < Insecto
 end
 
 class Abeja < Insecto
-    def nombre
-        puts "#{@nombre}"
-    end
 end
 
 perro = Vaca.new('Bobby').comer
 pato = Gato.new('Patito').comer
 abeja = Abeja.new('Pintadita').volar
-

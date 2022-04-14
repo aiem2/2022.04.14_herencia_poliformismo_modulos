@@ -12,10 +12,6 @@ class Person
 end
 
 class Student < Person
-    def nombre
-        puts "#{@first_name} #{@last_name}"
-    end
-
     def talk
         puts "¿Aquí ies la clase de programación con Ruby?"
     end
@@ -26,10 +22,6 @@ class Student < Person
 end
 
 class Parent < Person
-    def self.nombre
-        puts "#{@first_name} #{@last_name}"
-    end
-
     def talk
         puts "¿Aquí es la reunión de apoderados?"
     end
@@ -40,10 +32,6 @@ class Parent < Person
 end
 
 class Teacher < Person
-    def nombre
-        puts "#{@first_name} #{@last_name}"
-    end
-
     def talk
         puts "¡Bienvenidos a la clase de programación con Ruby!"
     end
@@ -61,4 +49,3 @@ Parent.new('Ignacio','Espinosa',36,'Student').introduce
 puts "\n"
 Teacher.new('Ignacio','Espinosa',36,'Student').talk
 Teacher.new('Ignacio','Espinosa',36,'Student').introduce
-
